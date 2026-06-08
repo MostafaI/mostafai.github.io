@@ -126,7 +126,10 @@ a:hover { text-decoration: underline; }
 h2 {
   font-size: 1.35rem;
   font-weight: 700;
-  margin: 0 0 .75rem;
+  color: #2c5d8a;
+  margin: 0 0 .9rem;
+  padding-bottom: .3rem;
+  border-bottom: 2px solid #e5e5e5;
 }
 
 hr {
