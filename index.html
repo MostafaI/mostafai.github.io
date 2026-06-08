@@ -4,92 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mostafa Ismail</title>
-  <meta name="description" content="Mostafa Ismail — personal website, resume, and portfolio." />
+  <meta name="description" content="Mostafa Ismail — University of Pennsylvania." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Mostafa Ismail</h1>
-      <p class="tagline">Student / Researcher at the University of Pennsylvania, SEAS</p>
-      <nav class="links">
-        <a href="mailto:mostafai@seas.upenn.edu">Email</a>
-        <a href="https://github.com/mostafai" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
-      </nav>
-    </div>
-  </header>
+  <div class="wrap">
 
-  <main class="container">
-    <section id="about">
-      <h2>About</h2>
+    <header>
+      <h1>Mostafa Ismail</h1>
+      <nav>
+        <a href="#contact">Contact</a> &middot;
+        <a href="assets/cv.pdf">CV</a> &middot;
+        <a href="#research">Research</a> &middot;
+        <a href="#publications">Publications</a> &middot;
+        <a href="#teaching">Teaching</a>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <img class="photo" src="assets/profile.jpg" alt="Mostafa Ismail"
+           onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22165%22 height=%22200%22&gt;&lt;rect width=%22100%25%22 height=%22100%25%22 fill=%22%23e8e8e8%22/&gt;&lt;text x=%2250%25%22 y=%2250%25%22 font-family=%22sans-serif%22 font-size=%2213%22 fill=%22%23999%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22&gt;photo&lt;/text&gt;&lt;/svg&gt;';" />
       <p>
-        Write a short paragraph about yourself here — your background, what
-        you're studying or working on, and what you're interested in. Keep it
-        to three or four sentences.
+        I am a [PhD student / researcher] in the
+        [Department] at the
+        <a href="https://www.upenn.edu/">University of Pennsylvania</a>,
+        School of Engineering and Applied Science. My research focuses on
+        [your area — one or two sentences describing the problems you work on
+        and why they matter].
+      </p>
+      <p>
+        Previously, I [degree / institution / notable experience]. I am
+        interested in [topics]. You can reach me at
+        <a href="mailto:mostafai@seas.upenn.edu">mostafai@seas.upenn.edu</a>.
+      </p>
+      <p class="contact-links" id="contact">
+        <a href="mailto:mostafai@seas.upenn.edu">Email</a> &middot;
+        <a href="https://scholar.google.com/">Google Scholar</a> &middot;
+        <a href="https://github.com/MostafaI">GitHub</a> &middot;
+        <a href="https://www.linkedin.com/in/">LinkedIn</a>
       </p>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="entry">
-        <div class="entry-head">
-          <h3>Role / Title</h3>
-          <span class="date">2024 – Present</span>
+    <hr />
+
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li><span class="date">Jun 2026</span> Started my new website.</li>
+        <li><span class="date">May 2026</span> Add a recent update here.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>
+        A short paragraph describing your research agenda. Below are selected
+        projects and papers.
+      </p>
+      <div class="pub">
+        <div class="pub-title">Title of Paper or Project</div>
+        <div class="pub-authors"><strong>Mostafa Ismail</strong>, Co-author, Co-author</div>
+        <div class="pub-venue">Venue / Conference, 2026.
+          <a href="#">paper</a> &middot; <a href="#">code</a> &middot; <a href="#">project page</a>
         </div>
-        <p class="org">Organization or Lab</p>
-        <ul>
-          <li>Describe an accomplishment or responsibility.</li>
-          <li>Quantify impact where you can.</li>
-        </ul>
       </div>
-      <div class="entry">
-        <div class="entry-head">
-          <h3>Previous Role</h3>
-          <span class="date">2023 – 2024</span>
+      <div class="pub">
+        <div class="pub-title">Another Project</div>
+        <div class="pub-authors"><strong>Mostafa Ismail</strong>, Co-author</div>
+        <div class="pub-venue">Workshop / Preprint, 2025.
+          <a href="#">paper</a> &middot; <a href="#">code</a>
         </div>
-        <p class="org">Organization</p>
-        <ul>
-          <li>Another accomplishment.</li>
-        </ul>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="cards">
-        <a class="card" href="#" target="_blank" rel="noopener">
-          <h3>Project Name</h3>
-          <p>One-line description of what it does and the tech used.</p>
-        </a>
-        <a class="card" href="#" target="_blank" rel="noopener">
-          <h3>Another Project</h3>
-          <p>One-line description.</p>
-        </a>
-      </div>
+    <hr />
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li>
+          <strong>Mostafa Ismail</strong>, Co-author. "Paper Title."
+          <em>Venue</em>, 2026. <a href="#">[pdf]</a>
+        </li>
+        <li>
+          Co-author, <strong>Mostafa Ismail</strong>. "Another Paper Title."
+          <em>Venue</em>, 2025. <a href="#">[pdf]</a>
+        </li>
+      </ol>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <div class="entry">
-        <div class="entry-head">
-          <h3>University of Pennsylvania</h3>
-          <span class="date">Expected 20XX</span>
-        </div>
-        <p class="org">School of Engineering and Applied Science — Degree, Major</p>
-      </div>
+    <hr />
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul class="teaching">
+        <li><span class="date">Spring 2026</span> Teaching Assistant, Course Name (CIS XXX)</li>
+        <li><span class="date">Fall 2025</span> Teaching Assistant, Course Name (CIS XXX)</li>
+      </ul>
     </section>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Mostafa Ismail</p>
-    </div>
-  </footer>
+    <hr />
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <footer>
+      <p>Last updated June 2026.</p>
+    </footer>
+
+  </div>
 </body>
 </html>

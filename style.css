@@ -1,126 +1,105 @@
-:root {
-  --bg: #ffffff;
-  --fg: #1a1a1a;
-  --muted: #666;
-  --accent: #0a66c2;
-  --border: #e5e5e5;
-  --card: #fafafa;
-  --maxw: 760px;
+html {
+  font-size: 16px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1115;
-    --fg: #e8e8e8;
-    --muted: #9aa0a6;
-    --accent: #4c9aff;
-    --border: #2a2d34;
-    --card: #171a20;
-  }
-}
-
-* { box-sizing: border-box; }
-
-html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  color: var(--fg);
-  background: var(--bg);
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.55;
 }
 
-.container {
-  max-width: var(--maxw);
+.wrap {
+  max-width: 720px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 3rem 1.25rem 4rem;
 }
 
-.hero {
-  padding: 4rem 0 2.5rem;
-  border-bottom: 1px solid var(--border);
+/* Header */
+header h1 {
+  margin: 0 0 .35rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
-.hero h1 {
-  margin: 0 0 .25rem;
-  font-size: 2.4rem;
-  letter-spacing: -0.02em;
+nav {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
 }
 
-.tagline {
-  margin: 0 0 1.25rem;
-  color: var(--muted);
-  font-size: 1.1rem;
-}
-
-.links a {
-  display: inline-block;
-  margin-right: 1rem;
-  color: var(--accent);
+/* Links — classic academic blue */
+a {
+  color: #0645ad;
   text-decoration: none;
-  font-weight: 500;
 }
-.links a:hover { text-decoration: underline; }
+a:hover { text-decoration: underline; }
 
-main { padding: 2.5rem 0; }
+/* Intro with floated photo */
+.intro {
+  overflow: hidden;
+}
 
-section { margin-bottom: 2.75rem; }
+.photo {
+  float: left;
+  width: 165px;
+  height: auto;
+  margin: 0 1.5rem 1rem 0;
+  border-radius: 3px;
+}
 
+.intro p { margin: 0 0 1rem; }
+
+.contact-links {
+  font-size: .98rem;
+}
+
+/* Section headings */
 h2 {
-  font-size: 1.4rem;
-  margin: 0 0 1rem;
-  padding-bottom: .35rem;
-  border-bottom: 2px solid var(--border);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 .75rem;
 }
 
-.entry { margin-bottom: 1.5rem; }
-
-.entry-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-  flex-wrap: wrap;
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
 }
 
-.entry-head h3 { margin: 0; font-size: 1.1rem; }
+section { clear: both; }
 
-.date { color: var(--muted); font-size: .9rem; white-space: nowrap; }
+/* Lists */
+ul, ol { margin: .5rem 0; padding-left: 1.4rem; }
 
-.org { margin: .15rem 0 .5rem; color: var(--muted); font-style: italic; }
+ul.news, ul.teaching { list-style: none; padding-left: 0; }
+ul.news li, ul.teaching li { margin-bottom: .5rem; }
 
-ul { margin: .5rem 0; padding-left: 1.2rem; }
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.card {
-  display: block;
-  padding: 1rem 1.1rem;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  text-decoration: none;
-  color: inherit;
-  transition: transform .12s ease, border-color .12s ease;
-}
-.card:hover { transform: translateY(-2px); border-color: var(--accent); }
-.card h3 { margin: 0 0 .35rem; font-size: 1.05rem; }
-.card p { margin: 0; color: var(--muted); font-size: .92rem; }
-
-footer {
-  border-top: 1px solid var(--border);
-  padding: 1.5rem 0;
-  color: var(--muted);
+.date {
+  display: inline-block;
+  min-width: 6.5rem;
+  color: #888;
   font-size: .9rem;
 }
 
+/* Publications */
+.pub { margin-bottom: 1.25rem; }
+.pub-title { font-weight: 700; }
+.pub-authors { font-size: .98rem; }
+.pub-venue { font-size: .95rem; color: #444; }
+
+ol.pubs li { margin-bottom: .85rem; }
+
+footer {
+  color: #888;
+  font-size: .9rem;
+}
+
+/* Responsive */
 @media (max-width: 560px) {
-  .hero { padding: 2.5rem 0 1.75rem; }
-  .hero h1 { font-size: 1.9rem; }
-  .cards { grid-template-columns: 1fr; }
+  .wrap { padding: 2rem 1.1rem 3rem; }
+  .photo { float: none; display: block; margin: 0 0 1rem; width: 150px; }
+  .date { min-width: 0; display: block; }
 }
