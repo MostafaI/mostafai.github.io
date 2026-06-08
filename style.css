@@ -162,7 +162,18 @@ ol.pubs li { margin-bottom: .85rem; font-size: .97rem; }
 h3.sub {
   font-size: 1.05rem;
   font-weight: 700;
-  margin: 1.5rem 0 .5rem;
+  color: #2c5d8a;
+  margin: 2.75rem 0 1.1rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #e5e5e5;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+h3.sub:first-of-type {
+  margin-top: 1rem;
+  padding-top: 0;
+  border-top: none;
 }
 
 .entry { margin-bottom: 1.25rem; }
