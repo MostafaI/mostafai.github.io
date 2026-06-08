@@ -28,8 +28,8 @@ body {
   background-image: url("assets/penn.jpg"), linear-gradient(120deg, #1b3a5b 0%, #2c5d8a 50%, #3f7cb0 100%);
 }
 
-.cover-penn2 {
-  background-image: url("assets/penn2.jpg"), linear-gradient(120deg, #1b3a5b 0%, #2c5d8a 50%, #3f7cb0 100%);
+.cover-penn3 {
+  background-image: url("assets/penn3.jpg"), linear-gradient(120deg, #1b3a5b 0%, #2c5d8a 50%, #3f7cb0 100%);
 }
 
 .cover-inner {
