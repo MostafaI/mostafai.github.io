@@ -180,6 +180,12 @@ ul.news li, ul.teaching li { margin-bottom: .5rem; }
 .pub-venue { font-size: .95rem; color: #444; }
 .pub-date { font-size: .85rem; color: #888; margin: .1rem 0 .2rem; }
 
+/* Awards */
+.award { margin-bottom: 1.1rem; }
+.award-title { font-weight: 700; font-size: 1.02rem; }
+.award-meta { font-size: .9rem; color: #888; }
+.award-desc { font-size: .93rem; color: #444; margin-top: .15rem; }
+
 /* Coursework lists */
 ul.courses {
   list-style: none;
