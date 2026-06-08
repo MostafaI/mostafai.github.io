@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Mostafa Ismail</title>
+  <meta name="description" content="Research projects by Mostafa Ismail in medical imaging, computer vision, and machine learning." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Mostafa Ismail</h1>
+      <nav>
+        <a href="index.html">Home</a> &middot;
+        <a href="projects.html" class="active">Projects</a> &middot;
+        <a href="publications.html">Publications</a> &middot;
+        <a href="awards.html">Awards</a> &middot;
+        <a href="cv.html">CV</a> &middot;
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="pub">
+        <div class="pub-title">Unsupervised projection binning to reduce motion artifacts in free-breathing imaging</div>
+        <div class="pub-venue">
+          A modified K-means clustering with periodic boundary conditions for
+          projection binning, substantially reducing motion and streak
+          artifacts in free-breathing micro-CT.
+          <a href="publications.html">Medical Physics, 2025</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">AI-driven automated lung sizing from chest radiographs</div>
+        <div class="pub-venue">
+          A framework that trains state-of-the-art segmentation models on chest
+          X-rays and applies computer vision to identify lung-contour feature
+          points for automatic measurement of lung size. Released as a PyPI package.
+          <a href="publications.html">American Journal of Transplantation, 2025</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Deep learning for chest radiograph analysis of primary graft dysfunction (PGD)</div>
+        <div class="pub-venue">
+          Segments left/right lungs with SOTA models, then uses representation
+          learning (CNN latent embeddings + PCA) to detect and quantify
+          infiltrates, improving standardized PGD grading and prognosis.
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">CT-Lung-Analysis: automated DICOM-to-lung-segmentation pipeline</div>
+        <div class="pub-venue">
+          An end-to-end Python tool that converts raw DICOM chest CT to NIfTI,
+          segments lungs without deep learning, and computes air-content maps
+          for rapid quantitative assessment (SimpleITK, nibabel).
+          <a href="https://github.com/MostafaI">code</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Adaptive filters and equalizers for signal denoising and channel compensation</div>
+        <div class="pub-venue">
+          Real-time interference cancellation and multi-interference rejection
+          (MATLAB) using adaptive IIR notch filters (LMS) and blind/constant-modulus
+          equalization for full digital signal recovery.
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer>
+      <p>Last updated June 2026.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
