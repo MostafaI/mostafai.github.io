@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Mostafa Ismail</title>
-  <meta name="description" content="Research projects by Mostafa Ismail in medical imaging, computer vision, and machine learning." />
+  <meta name="description" content="Research and engineering projects by Mostafa Ismail in medical imaging, computer vision, machine learning, signal processing, and embedded systems." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,23 +27,25 @@
     <section id="projects">
       <h2>Projects</h2>
 
-      <div class="pub">
-        <div class="pub-title">Unsupervised projection binning to reduce motion artifacts in free-breathing imaging</div>
-        <div class="pub-venue">
-          A modified K-means clustering with periodic boundary conditions for
-          projection binning, substantially reducing motion and streak
-          artifacts in free-breathing micro-CT.
-          <a href="publications.html">Medical Physics, 2025</a>
-        </div>
-      </div>
+      <h3 class="sub">Medical Imaging, Computer Vision &amp; Machine Learning</h3>
 
       <div class="pub">
         <div class="pub-title">AI-driven automated lung sizing from chest radiographs</div>
         <div class="pub-venue">
-          A framework that trains state-of-the-art segmentation models on chest
-          X-rays and applies computer vision to identify lung-contour feature
-          points for automatic measurement of lung size. Released as a PyPI package.
+          A deep learning and computer vision system for standardized lung
+          measurement from portable chest radiographs, achieving &lt;2.5% error
+          (&lt;7 mm) with robust inter- and intra-rater agreement compared to
+          expert radiologist review. Released as a PyPI package.
           <a href="publications.html">American Journal of Transplantation, 2025</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Optimizing spatiotemporal resolution in dynamic imaging using phase binning-guided K-means clustering</div>
+        <div class="pub-venue">
+          A clustering-based approach to mitigate motion artifacts in cone-beam
+          micro-CT, enabling fast imaging with high spatiotemporal precision.
+          <a href="publications.html">Medical Physics, 2025</a>
         </div>
       </div>
 
@@ -66,14 +68,69 @@
         </div>
       </div>
 
+      <h3 class="sub">Signal &amp; Image Processing</h3>
+
       <div class="pub">
         <div class="pub-title">Adaptive filters and equalizers for signal denoising and channel compensation</div>
+        <div class="pub-date">April 2022</div>
         <div class="pub-venue">
-          Real-time interference cancellation and multi-interference rejection
-          (MATLAB) using adaptive IIR notch filters (LMS) and blind/constant-modulus
-          equalization for full digital signal recovery.
+          Adaptive IIR notch filters (LMS) for sinusoidal noise suppression,
+          cascaded multi-interference rejection, and adaptive/blind equalizers
+          achieving full digital signal recovery.
         </div>
       </div>
+
+      <div class="pub">
+        <div class="pub-title">FIR filter design and multichannel filter banks for audio and image processing</div>
+        <div class="pub-date">March 2022</div>
+        <div class="pub-venue">
+          FIR filter and multirate filter-bank implementation: low-pass filter
+          design, a 4-channel octave-band filter bank, and 2D image subband
+          decomposition with quantization analysis.
+        </div>
+      </div>
+
+      <h3 class="sub">Embedded Systems &amp; Hardware</h3>
+
+      <div class="pub">
+        <div class="pub-title">X-ray radiation leakage scanner</div>
+        <div class="pub-date">June&ndash;September 2018</div>
+        <div class="pub-venue">
+          A system to scan X-ray tube radiation leakage using stepper motors,
+          sensors, an embedded controller, and a GUI application for R&amp;D
+          testing of imaging devices.
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Communication analyzer application</div>
+        <div class="pub-date">May&ndash;August 2018</div>
+        <div class="pub-venue">
+          An application that automatically identifies communication-channel
+          event sequences in NOMAD Pro2 handheld X-ray devices, analyzing and
+          sorting over 2 million data points for integration testing.
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Embedded system for smart battery interface board test</div>
+        <div class="pub-date">August&ndash;September 2017</div>
+        <div class="pub-venue">
+          Functional-tester firmware to verify the Battery Interface Board used
+          on portable X-ray devices, exercising multiple communication protocols.
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Class II dental imaging (X-ray) device life test</div>
+        <div class="pub-date">May&ndash;August 2017</div>
+        <div class="pub-venue">
+          PCB design (Altium) for a cycler board and data logger, with
+          microcontroller firmware for test-fixture control, SD-card data
+          logging, and LCD display.
+        </div>
+      </div>
+
     </section>
 
     <hr />
