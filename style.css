@@ -25,7 +25,7 @@ body {
 }
 
 .cover-inner {
-  max-width: 720px;
+  max-width: 820px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1.25rem 1.5rem;
@@ -41,7 +41,7 @@ body {
 }
 
 .wrap {
-  max-width: 720px;
+  max-width: 820px;
   margin: 0 auto;
   padding: 3rem 1.25rem 4rem;
 }
@@ -59,19 +59,20 @@ header h1 {
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: .4rem;
   margin-bottom: 2.25rem;
 }
 
 nav a {
   display: inline-block;
-  padding: .45rem .95rem;
+  padding: .42rem .7rem;
   border: 1px solid #d8dde3;
   border-radius: 7px;
-  font-size: .95rem;
+  font-size: .9rem;
   color: #2c5d8a;
   background: #f7f9fb;
   text-decoration: none;
+  white-space: nowrap;
   transition: background .12s ease, border-color .12s ease;
 }
 
