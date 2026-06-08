@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mostafa Ismail</title>
+  <meta name="description" content="Mostafa Ismail — personal website, resume, and portfolio." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Mostafa Ismail</h1>
+      <p class="tagline">Student / Researcher at the University of Pennsylvania, SEAS</p>
+      <nav class="links">
+        <a href="mailto:mostafai@seas.upenn.edu">Email</a>
+        <a href="https://github.com/mostafai" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Write a short paragraph about yourself here — your background, what
+        you're studying or working on, and what you're interested in. Keep it
+        to three or four sentences.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Role / Title</h3>
+          <span class="date">2024 – Present</span>
+        </div>
+        <p class="org">Organization or Lab</p>
+        <ul>
+          <li>Describe an accomplishment or responsibility.</li>
+          <li>Quantify impact where you can.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Previous Role</h3>
+          <span class="date">2023 – 2024</span>
+        </div>
+        <p class="org">Organization</p>
+        <ul>
+          <li>Another accomplishment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <h3>Project Name</h3>
+          <p>One-line description of what it does and the tech used.</p>
+        </a>
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <h3>Another Project</h3>
+          <p>One-line description.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>University of Pennsylvania</h3>
+          <span class="date">Expected 20XX</span>
+        </div>
+        <p class="org">School of Engineering and Applied Science — Degree, Major</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Mostafa Ismail</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

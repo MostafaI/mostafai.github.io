@@ -1,0 +1,126 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #666;
+  --accent: #0a66c2;
+  --border: #e5e5e5;
+  --card: #fafafa;
+  --maxw: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1115;
+    --fg: #e8e8e8;
+    --muted: #9aa0a6;
+    --accent: #4c9aff;
+    --border: #2a2d34;
+    --card: #171a20;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.hero {
+  padding: 4rem 0 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero h1 {
+  margin: 0 0 .25rem;
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.links a:hover { text-decoration: underline; }
+
+main { padding: 2.5rem 0; }
+
+section { margin-bottom: 2.75rem; }
+
+h2 {
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+  padding-bottom: .35rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.entry { margin-bottom: 1.5rem; }
+
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.entry-head h3 { margin: 0; font-size: 1.1rem; }
+
+.date { color: var(--muted); font-size: .9rem; white-space: nowrap; }
+
+.org { margin: .15rem 0 .5rem; color: var(--muted); font-style: italic; }
+
+ul { margin: .5rem 0; padding-left: 1.2rem; }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .12s ease, border-color .12s ease;
+}
+.card:hover { transform: translateY(-2px); border-color: var(--accent); }
+.card h3 { margin: 0 0 .35rem; font-size: 1.05rem; }
+.card p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+@media (max-width: 560px) {
+  .hero { padding: 2.5rem 0 1.75rem; }
+  .hero h1 { font-size: 1.9rem; }
+  .cards { grid-template-columns: 1fr; }
+}
