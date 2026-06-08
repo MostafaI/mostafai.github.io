@@ -75,6 +75,13 @@ nav a.active {
   margin: 0 0 1.5rem;
 }
 
+.pub-summary {
+  font-size: .95rem;
+  color: #555;
+  font-style: italic;
+  margin: 0 0 1.5rem;
+}
+
 .contact-table {
   border-collapse: collapse;
   margin-top: .5rem;
