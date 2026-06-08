@@ -57,15 +57,35 @@ header h1 {
 }
 
 nav {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 2.25rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: .45rem .95rem;
+  border: 1px solid #d8dde3;
+  border-radius: 7px;
+  font-size: .95rem;
+  color: #2c5d8a;
+  background: #f7f9fb;
+  text-decoration: none;
+  transition: background .12s ease, border-color .12s ease;
+}
+
+nav a:hover {
+  background: #eaf0f6;
+  border-color: #2c5d8a;
+  text-decoration: none;
 }
 
 nav a.active {
-  color: #1a1a1a;
-  font-weight: 700;
-  text-decoration: none;
+  background: #2c5d8a;
+  border-color: #2c5d8a;
+  color: #fff;
+  font-weight: 600;
   cursor: default;
 }
 
