@@ -162,6 +162,13 @@ a:hover { text-decoration: underline; }
   font-size: .98rem;
 }
 
+.aka {
+  font-size: .9rem;
+  color: #888;
+  font-style: italic;
+  margin: .25rem 0 0;
+}
+
 /* Section headings */
 h2 {
   font-size: 1.35rem;
